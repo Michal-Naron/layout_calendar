@@ -1,4 +1,4 @@
-$lenght-of-day: 100px;
+$length-of-day: 100px;
 $days-of-week: (0 mon, 1 tue, 2 wed, 3 thu, 4 fri, 5 sat, 6 sun);
 
 body {
@@ -13,7 +13,7 @@ body {
   .calendar--start-day-#{$day} .calendar__day:nth-child(1) {
     $gap: 1px;
 
-    margin-left: ($lenght-of-day + $gap) * $num;
+    margin-left: ($length-of-day + $gap) * $num;
   }
 }
 
@@ -29,13 +29,13 @@ body {
   display: flex;
   gap: 1px;
   flex-wrap: wrap;
-  width: 7 * $lenght-of-day + 6px;
+  width: 7 * $length-of-day + 6px;
 
   &__day {
     box-sizing: border-box;
     background-color: #eee;
-    width: $lenght-of-day;
-    height: $lenght-of-day;
+    width: $length-of-day;
+    height: $length-of-day;
     border: 1px solid black;
     display: flex;
     justify-content: center;
